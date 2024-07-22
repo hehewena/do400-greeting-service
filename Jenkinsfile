@@ -24,8 +24,10 @@ pipeline{
         // Add the "Deploy" stage here1
         stage("Deploy"){
             steps{
+                sh '''
                 oc project cbyztp-greetings
                 oc start-build greeting-service --follow --wait
+                '''
             }
         }
     }

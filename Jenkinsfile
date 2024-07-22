@@ -21,7 +21,7 @@ pipeline{
             }
         }
 
-        // Add the "Deploy" stage here
+        // Add the "Deploy" stage here1
         stage("Deploy"){
             steps{
                 oc project cbyztp-greetings
